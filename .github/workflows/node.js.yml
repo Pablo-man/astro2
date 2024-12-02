@@ -19,4 +19,4 @@ jobs:
     - run: npm run build --if-present
     - name: Clean up directory except 'dist'
       run: |
-        find . -mindepth 1 ! -path './dist*' -exec rm -rf {} +
+        find . -mindepth 1 ! -path '/home/ubuntu/actions-runner/html/astro2/astro2/dist*' -exec rm -rf {} +
