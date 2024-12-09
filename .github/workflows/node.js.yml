@@ -25,3 +25,7 @@ jobs:
     - name: Clean up directory except 'dist'
       run: |
         find . -mindepth 1 ! -path './dist*' -exec rm -rf {} + 2>/dev/null || true
+
+    - name: Restart Nginx container
+      run: |
+        docker restart nginx
